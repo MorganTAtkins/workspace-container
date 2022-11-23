@@ -1,0 +1,19 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  morgantatkins-workspace:
+    image: "morgantatkins/workspace:${IMAGE_VERSION}"
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    # environment:
+    #   KEY: value
+    # networks:
+    #   - name
+
+
+# volumes:
+#   data:
+# networks:
+#   name:
